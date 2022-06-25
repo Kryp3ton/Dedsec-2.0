@@ -98,7 +98,7 @@ def menu():
         psswgen()
     elif choice == "0":
         updatededsec()
-     elif choice == "98":
+     elif choice == "0.1":
         descr()
     elif choice == "99":
         clearScr(), sys.exit()
