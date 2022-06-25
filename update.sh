@@ -81,9 +81,10 @@ clear
 clear
 
  echo "";
-    echo "[✔] Update avvenuto con successo !!! [✔]";
+    echo -e "${GREEN} [✔] Update avvenuto con successo !!! [✔] ${GREEN}";
     echo "";
-    echo "[✔]=======================================================================================[✔]";
-    echo "[✔] ✔✔✔ Tutto completato correttamente... Puoi eseguire i tool scrivendo DEDSEC !! ✔✔✔ [✔]";
-    echo "[✔]=======================================================================================[✔]";
+    echo -e "${GREEN}[✔]=======================================================================================[✔]${GREEN}";
+    echo -e "${GREEN}[✔] ✔✔✔ Tutto completato correttamente... Puoi eseguire i tool scrivendo DEDSEC !! ✔✔✔ [✔]${GREEN}";
+    echo -e "${GREEN}[✔]=======================================================================================[✔]${GREEN}";
+    read INPUT
     echo "";
