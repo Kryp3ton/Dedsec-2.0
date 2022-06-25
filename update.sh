@@ -23,7 +23,7 @@ echo "
 echo "                                                               "                                                                    
 echo -e "${GREEN}                                          ~@~ Coded By Kryp3ton ~@~ ${NC}"
 echo ""
-echo -e "${GREEN}  Instagram.com/Kryp3ton | github.com/Kryp3ton/Ded-Sec/ ${NC} "
+echo -e "${GREEN}  Instagram.com/Kryp3ton | github.com/Kryp3ton/Dedsec-2.0 ${NC} "
 echo ""
 echo "---------------------------------------------------------------------------------------"
 echo ""
@@ -43,7 +43,7 @@ sudo chmod +x /usr/share/doc
 
 clear
 
-sudo rm -rf /usr/share/doc/DEDSEC_toolbox/
+sudo rm -rf /usr/share/doc/DEDSEC/
 
 clear
 
@@ -51,19 +51,19 @@ cd /etc/
 
 clear
 
-sudo rm -rf /etc/DEDSEC_toolbox
+sudo rm -rf /etc/DEDSEC
 
 clear
 
-mkdir DEDSEC_toolbox
+mkdir DEDSEC
 
 clear
 
-cd DEDSEC_toolbox
+cd DEDSEC
 
 clear
 
-git clone https://github.com/Kryp3ton/Dedsec_hackingtoolbox.git
+git clone https://github.com/Kryp3ton/Dedsec-2.0.git
 
 clear
 
@@ -79,3 +79,11 @@ clear
 ./install.sh
 
 clear
+
+ echo "";
+    echo "[✔] Update avvenuto con successo !!! [✔]";
+    echo "";
+    echo "[✔]=======================================================================================[✔]";
+    echo "[✔] ✔✔✔ Tutto completato correttamente... Puoi eseguire i tool scrivendo DEDSEC !! ✔✔✔ [✔]";
+    echo "[✔]=======================================================================================[✔]";
+    echo "";

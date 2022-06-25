@@ -23,7 +23,7 @@ echo "
 echo "                                                               "                                                                    
 echo -e "${GREEN}                                          ~@~ Coded By Kryp3ton ~@~ ${NC}"
 echo ""
-echo -e "${GREEN}  Instagram.com/Kryp3ton | github.com/Kryp3ton/Ded-Sec/ ${NC} "
+echo -e "${GREEN}  Instagram.com/Kryp3ton | github.com/Kryp3ton/Dedsec-2.0 ${NC} "
 echo ""
 echo "---------------------------------------------------------------------------------------"
 echo ""
@@ -34,17 +34,17 @@ read INPUT
 echo ""
 
 if [ "$PREFIX" = "/data/data/com.termux/files/usr" ]; then
-    INSTALL_DIR="$PREFIX/usr/share/doc/DEDSEC_toolbox"
+    INSTALL_DIR="$PREFIX/usr/share/doc/DEDSEC"
     BIN_DIR="$PREFIX/usr/bin/"
     pkg install -y git python2
 else
-    INSTALL_DIR="/usr/share/doc/DEDSEC_toolbox/"
+    INSTALL_DIR="/usr/share/doc/DEDSEC"
     BIN_DIR="/usr/bin/"
 fi
 
 echo "[✔] Controllo le directory...";
 if [ -d "$INSTALL_DIR" ]; then
-    echo "[!] La directory DEDSEC_toolbox esiste gia... vuoi rimpiazzarla ? [y/n]:" ;
+    echo "[!] La directory DEDSEC esiste gia... vuoi rimpiazzarla ? [y/n]:" ;
     read mama
     if [ "$mama" = "y" ]; then
         rm -R "$INSTALL_DIR"
@@ -55,12 +55,12 @@ fi
 
 echo "[✔] Download in corso ...";
 echo "";
-git clone https://github.com/Kryp3ton/Dedsec_hackingtoolbox.git "$INSTALL_DIR";
+git clone https://github.com/Kryp3ton/Dedsec-2.0.git "$INSTALL_DIR";
 echo "#!/bin/bash
-python $INSTALL_DIR/dedsec.py" '${1+"$@"}' > DEDTOOL;
-chmod +x DEDSEC_toolbox;
-sudo cp DEDSEC_toolbox /usr/bin/;
-rm DEDSEC_toolbox;
+python $INSTALL_DIR/dedsec.py" '${1+"$@"}' > DEDSEC;
+chmod +x DEDSEC;
+sudo cp DEDSEC /usr/bin/;
+rm DEDSEC;
 
 
 if [ -d "$INSTALL_DIR" ] ;
@@ -69,7 +69,7 @@ then
     echo "[✔] Download avvenuto con successo !!! [✔]";
     echo "";
     echo "[✔]=======================================================================================[✔]";
-    echo "[✔] ✔✔✔ Tutto completato correttamente... Puoi eseguire i tool scrivendo DEDTOOL!! ✔✔✔ [✔]";
+    echo "[✔] ✔✔✔ Tutto completato correttamente... Puoi eseguire i tool scrivendo DEDSEC !! ✔✔✔ [✔]";
     echo "[✔]=======================================================================================[✔]";
     echo "";
 else

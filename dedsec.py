@@ -112,9 +112,9 @@ def updatededsec():
     print ("Questo tool puo essere utilizzato solo su sitemi linux o simili. ")
     choiceupdate = raw_input("Continuare Y / N: ")
     if choiceupdate in yes:
-        os.system("git clone https://github.com/Kryp3ton/Dedsec_hackingtoolbox.git")
+        os.system("git clone https://github.com/Kryp3ton/Dedsec-2.0.git")
         os.system("cd  && sudo bash ./update.sh")
-        os.system("DEDTOOL")
+        os.system("DEDSEC")
 
 def ARP():
     os.system("clear")
